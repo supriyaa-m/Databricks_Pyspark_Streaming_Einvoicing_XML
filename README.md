@@ -12,13 +12,13 @@ Staging: Valid XML files are moved to a staging location for further processing.
 
 Parsing and Loading: The XML files in the staging area are parsed, and their contents are loaded into three distinct tables:
 
-Invoice Data Table: Stores customer-related data.\n
-Invoice VAT Table: Contains VAT (Value Added Tax) details.\n
-Invoice Line Table: Holds line item details, such as individual products or services listed on the invoice.\n
+Invoice Data Table: Stores customer-related data.
+Invoice VAT Table: Contains VAT (Value Added Tax) details.
+Invoice Line Table: Holds line item details, such as individual products or services listed on the invoice.
 Archiving: Once the XML files are successfully parsed and loaded into the respective tables, they are archived by moving them to a designated archive location. This step ensures that the processed files are stored securely for future reference or audit purposes.
 
 Aggregation and Loading: The final step involves aggregating the data from the staging tables based on account numbers. The aggregated data is then loaded into two tables:
 
-Total VAT Table: Summarizes the total VAT amounts per account number.\n
-Total Invoice Line Table: Aggregates the total number of line items per account number.\n
+Total VAT Table: Summarizes the total VAT amounts per account number.
+Total Invoice Line Table: Aggregates the total number of line items per account number.
 This platform ensures efficient, real-time processing of e-invoices, with robust validation, auditing, and aggregation mechanisms in place. The architecture supports seamless integration with external systems and provides comprehensive reporting and archival capabilities.
